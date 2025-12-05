@@ -133,6 +133,7 @@ function createUser(name:string , age:string): User2 {
 // }
 
 // console.log(divide(10, 0));
+// error handling
 function divide(a:number, b:number) {
     if(b === 0){
         throw new Error("Division by zero is not allowed.");
