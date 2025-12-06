@@ -66,3 +66,6 @@ function substract(numA:number, numB:number):number {
      }
         console.log("divide ", divide(10, 5));
 
+// trying
+let myUser = {name:"abhi", age:22};
+console.log("abhi");
