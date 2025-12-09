@@ -13,9 +13,7 @@ function processPayment(payment: PaymentStatus){
 
 }
 processPayment({status:"completed", code:200});
- type roleAdmin ={
-    role : "admin"
-}
+
 type user ={
     name:string
 }
