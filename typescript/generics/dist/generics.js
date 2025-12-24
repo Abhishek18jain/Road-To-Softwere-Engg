@@ -46,4 +46,12 @@ const user3 = { name: "Abhi", age: 15 };
 console.log(user3);
 const user4 = { name: "abhi" };
 console.log(user4);
+const user5 = { age: 15 };
+console.log(user5);
+const user6 = { name: "Abhi", age: 15 };
+const user8 = {
+    age: null,
+    name: 15
+};
+console.log(user8);
 //# sourceMappingURL=generics.js.map

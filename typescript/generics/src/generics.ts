@@ -110,3 +110,27 @@ const user4 :applyPick = {name:"abhi"}
 
 console.log(user4)
 
+// OMIT<T, K> — REMOVE SENSITIVE DATA Remove unwanted fields.
+
+type applyOmit = Omit <userPartial , "name">
+
+const user5 : applyOmit = {age:15 }
+console.log(user5)
+
+// readonly 
+type readonlyUser = Readonly <userPartial>
+
+const user6 : readonlyUser = {name :"Abhi" , age :15}
+// user6.name = "abhi" -> giving me error
+// const user7 : readonlyUser = {name : "jain" , age :16};
+
+// map 
+type mapUser<T> ={
+    [K in keyof T] : T[K] | any;
+} 
+type applyMap = mapUser<userPartial>;
+ const user8:applyMap = {
+    age:null,
+    name:15
+ }
+console.log(user8)
